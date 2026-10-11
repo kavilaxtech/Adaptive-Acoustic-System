@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.streamlit/
+data/mimii/**/*.wav
+model/*.joblib
+results/*.csv
+results/*.json
+results/*.png

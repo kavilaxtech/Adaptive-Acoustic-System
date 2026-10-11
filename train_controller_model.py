@@ -1,11 +1,4 @@
-"""Train and evaluate the ANC configuration selector using real MIMII fan WAVs.
 
-No synthetic audio samples are generated. Input features come from MIMII WAVs.
-Training targets are simulation-derived: each candidate FxNLMS configuration is
-run against a real recording through explicitly assumed FIR paths. Accordingly,
-all ANC performance results remain simulation results until path data and
-reference/error signals are measured on physical equipment.
-"""
 from __future__ import annotations
 
 import argparse

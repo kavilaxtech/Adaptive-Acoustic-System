@@ -1,9 +1,4 @@
-"""Extract a small, real MIMII fan subset from the official ZIP without unpacking everything.
 
-This script does not generate audio. It copies selected original WAV files from the
-DCASE 2020 dev_data_fan.zip archive into the directory structure expected by this project.
-Only the ZIP's central directory is scanned; only the selected WAV payloads are decompressed.
-"""
 from __future__ import annotations
 
 import argparse

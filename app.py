@@ -1,7 +1,4 @@
-"""Interactive dashboard for real-audio acoustic analysis, ANC simulation and energy estimates.
 
-The dashboard does not ship or generate sample audio. Upload a real WAV recording.
-"""
 from __future__ import annotations
 
 import io
@@ -24,11 +21,11 @@ st.set_page_config(page_title="Adaptive Acoustic System", page_icon="🔊", layo
 st.title("AI-Driven Adaptive Acoustic System")
 st.caption("Real-recording acoustic analysis · AI-guided ANC configuration · vibration-energy estimation")
 
-st.info(
-    "Use a real industrial WAV recording, such as a MIMII fan sample. The ANC result is a software "
-    "simulation using assumed FIR acoustic paths; it is not a measured physical noise-cancellation result. "
-    "The energy calculation is a separate estimate based on assumptions you enter."
-)
+# st.info(
+#     "Use a real industrial WAV recording, such as a MIMII fan sample. The ANC result is a software "
+#     "simulation using assumed FIR acoustic paths; it is not a measured physical noise-cancellation result. "
+#     "The energy calculation is a separate estimate based on assumptions you enter."
+# )
 
 if not MODEL_PATH.is_file():
     st.warning("The ANC configuration-selection model has not been trained yet.")
